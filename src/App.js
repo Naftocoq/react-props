@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import React from "react"
+import PlayersList from "./Components/PlayersList"
+import Navbara from "./Components/Navbara"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbara />
+      <h1 style={{ textAlign: "center", fontSize: "50px", margin: "20px" }}>
+        <b>FIFA Player Cards</b>
+      </h1>
+      <PlayersList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
